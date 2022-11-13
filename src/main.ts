@@ -23,6 +23,8 @@ app.use((err: Error, req: Request, res: Response) => {
 });
 
 connectToServer().then(async () => {
+  // await loadModel();
+
   app.listen(port, () => {
     return console.log(`🚀 Listening at http://localhost:${port}`);
   });
